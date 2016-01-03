@@ -42,14 +42,6 @@ declare function thenify <T1, T2, T3, T4, U1, U2, U3> (fn: (a: T1, b: T2, c: T3,
 declare function thenify <T1, T2, T3, T4, UAll> (fn: (a: T1, b: T2, c: T3, d: T4, cb: CallbackAll<UAll>) => any): (a: T1, b: T2, c: T3, d: T4) => Promise<UAll[]>;
 
 declare namespace thenify {
-  export function withCallback <T> (fn: (cb: Callback<T>) => any): (cb?: Callback<T>) => Promise<T>
-  export function withCallback <A, T> (fn: (a: A, cb: Callback<T>) => any): (a: A, cb?: Callback<T>) => Promise<T>
-  export function withCallback <A, B, T> (fn: (a: A, b: B, cb: Callback<T>) => any): (a: A, b: B, cb?: Callback<T>) => Promise<T>
-  export function withCallback <A, B, C, T> (fn: (a: A, b: B, c: C, cb: Callback<T>) => any): (a: A, b: B, c: C, cb?: Callback<T>) => Promise<T>
-  export function withCallback <A, B, C, D, T> (fn: (a: A, b: B, c: C, d: D, cb: Callback<T>) => any): (a: A, b: B, c: C, d: D, cb?: Callback<T>) => Promise<T>
-
-
-
   export function withCallback <U> (fn: (cb: Callback<U>) => any): (cb?: Callback<U>) => Promise<U>;
   export function withCallback <U1, U2> (fn: (cb: Callback2<U1, U2>) => any): (cb?: Callback2<U1, U2>) => Promise<[U1, U2]>;
   export function withCallback <U1, U2, U3> (fn: (cb: Callback3<U1, U2, U3>) => any): (cb?: Callback3<U1, U2, U3>) => Promise<[U1, U2, U3]>;
