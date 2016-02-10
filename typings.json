@@ -2,6 +2,6 @@
   "name": "thenify",
   "main": "index.d.ts",
   "dependencies": {
-    "es6-promise": "github:typings/typed-es6-promise#94aac67ef7a14a8de8e9e1d3c1f9a26caa0d9fb1"
+    "es6-promise": "github:typed-typings/npm-es6-promise#fb04188767acfec1defd054fc8024fafa5cd4de7"
   }
 }
